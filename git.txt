@@ -1,0 +1,11 @@
+đẩy code lên git:
+ + git status( kiểm tra trạng thái thay đổi của git
+ + git init ( áp dụng vs lần đầu tiên đẩy code lên git)
+ + git add .
+ + git commit -m "{nội dung commit, nội dung làm, mô tả}"
+ + git checkout -b {tên nhánh} ( tạo nhánh mới, tránh push lên master)
+ + git push origin {tên nhánh} (push code lên git, {tên nhánh} có thể là master hoặc checkout ở dòng 4 tạo ra)
+Lấy code mới nhất:
+ + git pull origin {tên nhánh} ( tên nhánh có thể là master hoặc nhánh con được checkout tạo ra)
+Lấy code từ git về( đối với lần đầu lấy code):
+ + git clone {source code}
