@@ -17,25 +17,21 @@ abstract class BaseRepositories implements RepositoriesInterface
 
     public function all()
     {
-        // TODO: Implement all() method.
         return $this->model->all();
     }
 
     public function find(int $id)
     {
-        // TODO: Implement find() method.
         return $this->model->findOrFail($id);
     }
 
     public function create(array $data)
     {
-        // TODO: Implement create() method.
         return $this->model->create($data);
     }
 
     public function update(array $data, $id)
     {
-        // TODO: Implement update() method.
         $object = $this->model->find($id);
 
         return $object->update($data);
@@ -43,7 +39,6 @@ abstract class BaseRepositories implements RepositoriesInterface
 
     public function delete($id)
     {
-        // TODO: Implement delete() method.
         $object = $this->model->find($id);
 
         return $object->delete();

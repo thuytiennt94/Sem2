@@ -14,7 +14,7 @@ use App\Http\Controllers\Front;
 |
 */
 
-Route::get('/', function (App\Repositories\product\ProductRepositoryInterface $productRepository){
+Route::get('/', function (App\Repositories\Product\ProductRepositoryInterface $productRepository){
     return $productRepository->all();
 });
 //Route::get('/', [Front\HomeController::class, 'index']);
